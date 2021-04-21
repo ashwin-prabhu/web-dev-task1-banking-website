@@ -1,0 +1,55 @@
+/* Navigation Bar */
+header{
+	position: fixed;
+	top: 0;
+	background-color: #222;
+    z-index: 100;
+    width: 100%;
+	transition: 0.5s;
+}
+.navbar{
+	height: 65px;
+}
+.nav-link{
+    color: #fff !important;
+    width: auto;
+    
+
+}
+.height{
+	padding: 7px 20px !important;
+	margin-top: 2px !important;
+	margin-right: 10px !important;
+	font-size: 1.1rem;
+	border-radius: 20px;
+}
+.height:hover{
+background-color: #107afd;
+}
+.active{
+	font-weight: 600;
+}
+.navbar-brand{
+	font-size: 1.4rem;
+	color: #fff !important;
+}
+
+/* Scroll */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+} 
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: transparent;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.2);
+    border-radius: 10px;
+} 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.5); 
+}

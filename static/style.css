@@ -1,0 +1,29 @@
+*{
+    scroll-behavior: smooth;
+    }
+    body{
+        text-align: center;
+        background-color: #ffffff;
+        background-image: url("background.jpg");
+        background-repeat:no-repeat;
+        background-size: cover;
+        
+    }
+    
+.title{
+    padding-top: 150px;
+    padding-left: 20%;
+    text-align: left;
+    color: #222;
+    font-style: italic;
+      
+}
+.started{
+    text-align: left;
+    margin-top: 30px;
+    margin-right: 350px;
+}
+.started:hover{
+    background-color: rgb(253, 10, 10);
+    
+}

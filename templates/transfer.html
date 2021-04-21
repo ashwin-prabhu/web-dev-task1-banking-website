@@ -1,0 +1,45 @@
+ <!-- Appointment -->
+ <div class="postbg" id="post_bg">
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 postbox" id="post_box"> 
+            <h1 class="logintitle">Appointment</h1>
+            <button onclick="close_post()" class="btnclse"><i class="fa fa-close"></i></button>
+            <hr>
+            <form>
+                <label for="doctor">Doctor:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select id="doctor" name="doctor" class="docnameinput">
+                    <option value="1">Dr. S Priya</option>
+                    <option value="2">Dr. Prasad D</option>
+                    <option value="3">Dr. Benjamin E</option>
+                </select>
+                <label for="datetime">Date and Time: &nbsp;&nbsp;</label>
+                <input type="datetime-local" id="datetime" name="birthdaytime">
+                <button id="book_button" onclick="openconfirmation()" type="button" class="btn btn-outline-light postbtn">Book Appointment</button>
+                <div id="confirmationmsg">
+                    <p>You will receive a message soon on the Details of<br>Appointment along with the Virtual Meeting Credentials</p>
+                    <button onclick="close_post()" type="button" class="btn btn-outline-light postbtn1">Confirm</button>
+                    <button onclick="close_post()" type="button" class="btn btn-outline-light postbtn1">Cancel</button>
+                </div>
+                
+            </form>
+        </div>        
+        <div class="col-lg-3"></div> 
+    </div>
+    </div>
+</div>
+<script>
+    function open_post(){
+        document.getElementById('post_bg').style.display='block';
+    }
+    function openconfirmation(){
+        document.getElementById('book_button').style.display='none';
+        document.getElementById('confirmationmsg').style.display='block';
+    }
+    function close_post(){
+        document.getElementById('post_bg').style.display='none'
+    }
+</script>
+
+<div id="eng">

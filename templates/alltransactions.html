@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>All Transactions</title>
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static',filename= 'bank_2.png')}}">
+
+    <!-- Bootstarp CDNs -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css' integrity='sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK' crossorigin='anonymous'>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js' integrity='sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD' crossorigin='anonymous'></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- External Style Sheet -->
+    
+    <link rel='stylesheet' href="{{ url_for('static',filename= 'nav.css')}}">
+    <link rel='stylesheet' href="{{ url_for('static',filename= 'alltransactions.css')}}">
+    
+    
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+    <div class='container'>
+    <nav class='navbar navbar-expand-lg navbar-light'>
+        <div class='container-fluid'>
+            <a class='navbar-brand' href='index.html'>
+                <img src="{{ url_for('static',filename= 'bank_2.png')}}" width="40" height="37" class="d-inline-block align-top" alt="" loading="lazy">
+                Web Banking</a>
+            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+            <span class='navbar-toggler-icon'></span>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+                <ul class='navbar-nav ml-auto mb-2 mb-lg-0'>
+                    <li class='nav-item'>
+                    <a class='nav-link height active' aria-current='page' href='http://localhost:5000/'>Home</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class='nav-link height active' aria-current='page' href='http://localhost:5000/transactions'>Transactions</a>
+                    </li>
+                    <li class='nav-item'>
+                    <a class='nav-link height' href='http://localhost:5000/customers'>Customers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+    </header>
+    <div class="doc">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="title">All Transactions</h1>
+                </div>
+                <div class="col-lg-2 h">
+                    <h3>Trans no</h3>
+                </div>
+                <div class="col-lg-3 h">
+                    <h3>From</h3>
+                </div>
+                <div class="col-lg-2 h">
+                    <h3>To</h3>
+                </div>
+                <div class="col-lg-3 h">
+                    <h3>Amount</h3> 
+                </div>
+                <div class="col-lg-2 h">
+                    <h3>Date & Time</h3>
+                </div>
+            </div>
+            <div class="col-lg-12"><hr class="hrspl"></div>
+            
+            {% for i in data %}
+            <div class="col-lg-12">
+                <div class="input" id="myDropdown">
+                    <div class="listofcus">
+                        <div class="row">
+                            <div class="col-lg-2 l">
+                                <p>{{i[0]}}</p>
+                            </div>
+                            <div class="col-lg-3 l">
+                                <p>{{i[1]}}</p>
+                            </div>
+                            <div class="col-lg-2 l">
+                                <p>{{i[2]}}</p>
+                            </div>
+                            <div class="col-lg-3 l">
+                                <p>{{i[3]}}</p>
+                            </div>
+                            <div class="col-lg-2 lb">
+                                <p>{{i[4]}}</p>
+                            </div>
+                            <div class="col-lg-12">
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+
+</body>
+</html>

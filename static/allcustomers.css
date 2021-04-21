@@ -1,0 +1,186 @@
+*{
+    text-align: center;
+}
+html{
+	
+	scroll-behavior: smooth;
+}
+
+
+
+
+/* Navigation Bar */
+
+
+
+
+
+
+.searchnav{
+    background-color: #2b3664;
+    padding-top: 73px;
+    height: 170px;
+    text-align: center;
+}
+.searchnav .title{
+    color: #fff;
+    padding-top: 20px;
+}
+.input input{
+    background-color: transparent;
+    border: 0;
+    margin-top: 30px;
+    padding: 0 40px;
+    padding-bottom: 20px;
+    height: 40px;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 50px;
+}
+input:focus{
+    outline: 0;
+}
+.doc{
+    min-height: 334px;
+    padding-bottom: 40px;
+}
+.doc .title{
+    text-align: left;
+    font-style: italic;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.doc .h{
+    text-align: center;
+}
+hr{
+    margin: 0 !important;
+}
+.doc .hrspl{
+    margin-top: 5px !important;
+    border-top: 1px solid;
+}
+.doc .l{
+    text-align: center;
+    padding: 15px 0;
+    vertical-align: middle;
+}
+.doc .lb{
+    text-align: center;
+    padding: 10px 0;
+    vertical-align: middle;
+}
+.doc p{
+    margin: 0 !important;
+}
+.input{
+    text-align: center;
+}
+.postbg{
+    z-index: 120;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100vh;
+}
+.postbox{
+    padding: 20px;
+    margin-top: 20vh;
+    color: #fff;
+    background-color: #2b3664;
+    border-radius: 20px;
+}
+.logintitle{
+    padding-left: 10px;
+}
+.t1{
+    padding-top: 5px;
+    font-size: 2.2rem;
+}
+.btnclse{
+    position: absolute;
+    top: 16px;
+    right: 25px;
+    background-color: transparent;
+    border: 0;
+}
+.fa-close{
+    color: #fff;
+}
+form{
+	margin-top: 20px;
+}
+form label{
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+input{
+	width: 280px;
+	height: 35px;
+}
+form{
+    text-align: center;
+}
+form .docnameinput{
+	width: 280px;
+	height: 35px;
+}
+.postbtn{
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 50px;
+}
+.postbtn1{
+    width: 150px;
+    border-radius: 50px;
+}
+#confirmationmsg{
+	padding-top: 10px;
+	display: none;
+}
+#post_bg{
+    display: none;
+}
+
+.smaller{
+	font-size: 1.5rem;
+}
+.list{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.list{
+    min-height: 334px;
+    padding-bottom: 40px;
+}
+.list .title{
+    text-align: left;
+    font-style: italic;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.list .h{
+    text-align: center;
+}
+hr{
+    margin: 0 !important;
+}
+.list .hrspl{
+    margin-top: 5px !important;
+    border-top: 1px solid;
+}
+.list .l{
+    text-align: center;
+    padding: 15px 0;
+    vertical-align: middle;
+}
+.list .lb{
+    text-align: center;
+    padding: 10px 0;
+    vertical-align: middle;
+}
+.list p{
+    margin: 0 !important;
+}
